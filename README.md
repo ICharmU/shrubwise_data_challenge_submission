@@ -1,6 +1,6 @@
-# shrubwise_data_challenge_submission
+# Shrubwise Data Challenge Submission
 
-Submission using https://github.com/ICharmU/shrub
+Main Repository https://github.com/ICharmU/shrub
 
 Flowchart:
 
@@ -15,6 +15,7 @@ We provide two primary entry points:
 1. **`submission_runner.ipynb`**: This is a streamlined, reproducible environment designed specifically for this submission.
    - **Setup**: First, create the required environment using: `conda create --name reproduce_env python=3.14.4`. Activate it, then install dependencies via `pip install -r requirements.txt`.
    - **Usage**: Run this notebook end-to-end to view our final model's performance metrics, predictions, and summary visualizations.
+   - **Cloning main repo**: The notebook attempts to automatically clone the main repo (named shrub) into its own directory within this repo. If cloning doesn't work you will need to clone the [shrub repo](https://github.com/ICharmU/shrub) into this repository locally or download the shrub repo as a zip and extract into this repo.
 
 2. **`main.ipynb` (Full Development Pipeline)**: This notebook lives in the main repository and acts as our central orchestration pipeline. It manages everything from data fetching and feature extraction to training and evaluation.
 
