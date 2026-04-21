@@ -8,17 +8,17 @@ Flowchart:
 
 - PDF access under `/materials/flowchart.pdf`
 
-## 🚀 Executing the Notebooks
+## Executing the Notebooks
 
-We provide two primary entry points depending on your evaluation goals:
+We provide two primary entry points:
 
-1. **`submission_runner.ipynb`**: This is a streamlined, reproducible environment designed specifically for final evaluation.
-   - **Setup**: First, create the required environment using: `conda create --name reproduce_env python=3.14.4`. Activate it, then install dependencies via `pip install -r requirements.txt`. (Note: This may take 5-10 minutes due to PyTorch libraries).
+1. **`submission_runner.ipynb`**: This is a streamlined, reproducible environment designed specifically for this submission.
+   - **Setup**: First, create the required environment using: `conda create --name reproduce_env python=3.14.4`. Activate it, then install dependencies via `pip install -r requirements.txt`.
    - **Usage**: Run this notebook end-to-end to view our final model's performance metrics, predictions, and summary visualizations.
 
 2. **`main.ipynb` (Full Development Pipeline)**: This notebook lives in the main repository and acts as our central orchestration pipeline. It manages everything from data fetching and feature extraction to training and evaluation.
 
-## 🗂️ Artifact Management & Storage Approach
+## Artifact Management & Storage Approach
 
 Because the provided server environment was constrained to 5GB of storage, we could not store all point clouds, imagery, and intermediate features locally. To solve this, we implemented a custom artifact management system backed by Google Drive.
 
